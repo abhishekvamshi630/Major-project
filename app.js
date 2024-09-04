@@ -28,6 +28,9 @@ app.use(methodOverride("_method"));
 app.engine("ejs", engine);
 app.use(express.static(path.join(__dirname, "/public")));
 
+//Cloud Api Key
+const apiKey = process.env.CLOUD_API_KEY;
+
 //Atlas Data Base Url
 const  dbUrl = process.env.ATLASDB_URL;
 
